@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package rekursif1;
+
+/**
+ *
+ * @author Iin
+ */
+public class Rekursif1 {  
+    int i=0; //inisialisasi awal
+    int batas=6;
+   
+    int looping(){
+        if(i<batas){
+            System.out.println(i);
+            i++;
+            return looping();
+           
+        }
+        return 0;
+    }
+    public static void main(String[] args) {
+        // TODO code application logic here
+         Rekursif1 dr= new Rekursif1();
+      dr.looping();
+    }
+    
+    
+}
